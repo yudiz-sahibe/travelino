@@ -1,0 +1,849 @@
+/* font  */
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Bold.eot');
+    src: url('../fonts/AtypDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Bold.woff') format('woff'),
+        url('../fonts/AtypDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Bold.svg#AtypDisplay-Bold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-BoldItalic.eot');
+    src: url('../fonts/AtypDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-BoldItalic.woff') format('woff'),
+        url('../fonts/AtypDisplay-BoldItalic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-BoldItalic.svg#AtypDisplay-BoldItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Medium.eot');
+    src: url('../fonts/AtypDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Medium.woff') format('woff'),
+        url('../fonts/AtypDisplay-Medium.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Medium.svg#AtypDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Light.eot');
+    src: url('../fonts/AtypDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Light.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Light.woff') format('woff'),
+        url('../fonts/AtypDisplay-Light.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Light.svg#AtypDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-LightItalic.eot');
+    src: url('../fonts/AtypDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-LightItalic.woff') format('woff'),
+        url('../fonts/AtypDisplay-LightItalic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-LightItalic.svg#AtypDisplay-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Italic.eot');
+    src: url('../fonts/AtypDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Italic.woff') format('woff'),
+        url('../fonts/AtypDisplay-Italic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Italic.svg#AtypDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-MediumItalic.eot');
+    src: url('../fonts/AtypDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-MediumItalic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-MediumItalic.woff') format('woff'),
+        url('../fonts/AtypDisplay-MediumItalic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-MediumItalic.svg#AtypDisplay-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Regular.eot');
+    src: url('../fonts/AtypDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Regular.woff') format('woff'),
+        url('../fonts/AtypDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Regular.svg#AtypDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Semibold.eot');
+    src: url('../fonts/AtypDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Semibold.woff') format('woff'),
+        url('../fonts/AtypDisplay-Semibold.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Semibold.svg#AtypDisplay-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-ThinItalic.eot');
+    src: url('../fonts/AtypDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-ThinItalic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-ThinItalic.woff') format('woff'),
+        url('../fonts/AtypDisplay-ThinItalic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-ThinItalic.svg#AtypDisplay-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Thin.eot');
+    src: url('../fonts/AtypDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-Thin.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Thin.woff') format('woff'),
+        url('../fonts/AtypDisplay-Thin.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Thin.svg#AtypDisplay-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-SemiboldItalic.eot');
+    src: url('../fonts/AtypDisplay-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AtypDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-SemiboldItalic.woff') format('woff'),
+        url('../fonts/AtypDisplay-SemiboldItalic.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-SemiboldItalic.svg#AtypDisplay-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+body                           {font-family: 'Atyp Display';}
+:root                          {
+    --gray-color: #343434;
+    --red-color: #DD373F;
+    --red-color-2: #FF7074;
+    --red-color-3: #FF5357;
+    --white-color: #ffffff;
+    --burgundy-color: #68000F;
+    --circle-color: #E7BDBA;
+    --red-color-4: #FFF6F5;
+    --burgundy-lite: #9E373C;
+    --paragraph-color: #7C7C7C;
+    --button-text: #1F1F1F;
+    --gray-color-2: #D9D9D9;
+}
+
+ /* typography  */
+ h1                                             {margin: 0px; font-size: 57px; line-height: 70px; font-weight: bold;}
+ h2                                             {margin: 0px; font-size: 45px; line-height: 54px; font-weight: bold;}
+ h3                                             {margin: 0px; color: var(--gray-color); font-size: 24px; line-height: 30px;}
+ h4                                             {margin: 0px; color: var(--gray-color); font-size: 22px; line-height: 28px; font-weight: 500;}
+ p                                              {margin: 0px; color: var(--paragraph-color); padding-bottom: 16px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* utility  */
+.primary-btn                                            {transform: translate(-4px, -4px); padding: 13px 24px; text-decoration: none; transition: all 0.4s ease; color: var(--burgundy-color);  border: 1px solid var(--white-color); display: inline-block; border-radius: 100px; z-index: 1; font-weight: 500; border-radius: 100px; letter-spacing: 0.5px; font-size: 18px; line-height: 22px; background-color: var(--white-color); position: relative; }
+.primary-btn:hover                                      {transform: translate(0px, 0px); color: var(--burgundy-color);}
+.bg-btn                                                 {margin-left: 4px; display: inline-block; position: relative;}
+.bg-btn span                                            {position: absolute; background-color: var(--burgundy-color); top: 50%; width: 98%; height: 99%; border-radius: 100px; z-index: 0;  transform: translate(-50%, -50%);  left: 50%;}
+.primary-btn.red-btn                                    {background-color: var(--red-color-3); border-color: var(--red-color-3); color: var(--white-color);}
+.primary-btn:hover:before                               {opacity: 0; color: var(--burgundy-color);} 
+.text-circle                                            {position: relative;}
+.text-circle .text-circle-div                           {position: absolute;  width: 100%; height: 90%; top: 0; left: 2px; border-radius: 50%; outline: 2px solid var(--white-color); transform: rotate(345deg); z-index: -1;}
+.text-circle .text-circle-div.big-circle                {transform: rotate(350deg) !important;}
+
+
+
+/* common css  */
+section                                         {padding: 100px 0px;}
+.mobile-frame                                   {position: relative; display: inline-flex; }
+.screenshot-bg                                  {position: absolute; transition: all 0.4s; top: 0; width: 100%; border-radius: 24px; height: 100%; background-color: var(--red-color-3); z-index: 1;}
+.screen-shot                                    {border-radius: 24px; box-shadow: -24px -24px 0px #FF5357; transition: all 0.4s; overflow: hidden; display: inline-block; border: 6px solid var(--burgundy-color); position: relative; z-index: 2;}
+.screenshot-bg-circle                           {transform-origin: center; pointer-events: none; width: 42%; transition: all 0.4s; position: absolute; height: 114%; border: 4px solid var(--circle-color); left: -24px; margin: auto; top: 0px; bottom: 0%; border-radius: 50%; right: 0%; transform: rotate(45deg); }
+.mobile-frame:hover  .screen-shot               {box-shadow: 24px 24px 0px #FF5357;}  
+.mobile-frame:hover .screenshot-bg              {transform: translate(56px, 56px);}  
+.mobile-frame:hover .screenshot-bg-circle       {transform: rotate(-45deg); left: 12px;}    
+.cicrle-text-bg                                 {position: relative; z-index: 1;}
+.content-wrap                                   {padding: 0px 50px;}
+.black-text                                     {color: black;}
+.cicrle-text-bg::after                          {position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; content: ''; border-radius: 50%; z-index: -1; width: 100%; height: 90%; border: 3px solid var(--red-color);}
+.form-group .form-control                       {padding: 14px 24px; border-radius: 10px; border: 1px solid #B0B0B0; font-size: 16px; line-height: 28px;}
+.form-group                                     {margin-bottom: 24px;}
+.form-group .form-control:focus                 {color: #212529; background-color: #fff; border-color: var(--circle-color); outline: 0; box-shadow: 0 0 0 .16rem #e7bdbaad;}
+.signup-modals .form-check-label                {margin-top: 3px; font-size: 18px; line-height: 22px; letter-spacing: 0.5px; color: var(--gray-color); font-weight: bold;}    
+.signup-modals .form-check .form-check-input    {width: 18px; height: 18px;}
+.signup-modals .form-check                      {margin-bottom: 18px;}
+.form-check-input:focus                         {box-shadow: none;}
+.form-check-input:checked                       {border-color: var(--red-color-2); background-color: var(--red-color-2);}
+button                                          {background-color: transparent; border: none;}
+
+/* Popup css start  */
+ .signup-modals .modal-dialog                  {max-width: 1140px;}
+ .signup-content                               {max-width: 90%; margin: 0 auto; padding: 142px 0px; position: relative; overflow: hidden;}
+ .signup-modals .btn-close                     {width: 50px; border-radius: 50%; height: 50px; background:  transparent url( '../images/popup-close-ic.svg' ) center/1em auto no-repeat; position: absolute; top: -10px; right: -10px; z-index: 1; background-color: var(--burgundy-color); opacity: 1;}
+ .signup-modals .btn-close:focus               {box-shadow: none;}
+ .signup-modals .modal-content                 {border-radius: 30px;}
+ .signup-modals .about-screen                  {display: flex; justify-content: center;}
+ .game-screen                                  {width: 100%;}
+ .game                                         {overflow: hidden; border-radius: 30px; position: relative;}
+ .play-game button                             {padding: 0px; margin-bottom: 8px; width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50% ; border: 3px solid var(--white-color); background-color: transparent;}
+ .play-game                                    {position: absolute; max-height: 498px; flex-direction: column;     justify-content: center; display: inline-flex;    align-items: center; z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+ .play-game button img                         {margin-left: 3px;}
+ .game-popup .signup-content                   {padding: 60px 0px;}
+ .game span                                    {font-size: 18px; line-height: 22px; letter-spacing: 0.5px; font-weight: bold; color: var(--white-color);}
+ .signup-content h2                            {padding-bottom: 18px;}  
+ .signup-content p                             {padding-bottom: 30px;} /*oops*/
+ .oops-img                                     {padding-bottom: 37px; max-width: 268px;}
+ .game-share-popup-content h2                  {padding-bottom: 37px;}
+ .or-line                                      {max-width: 70%; margin: 0 auto; position: relative;}
+ .line-text                                    {width: 100%; height: 1px ; background-color: #E8E8E8; position: absolute; left: 0; right: 0; bottom: 0; top: 0; margin: auto;}
+ .or-line .or                                  {padding: 0px 18px; color: #626262; font-size: 18px; letter-spacing: 0.5px;  line-height: 28px; background-color: var(--white-color); position: relative; z-index: 1;}
+ .red-text                                     {font-weight: bold; color: var(--red-color-3);}
+ .social-media.share-game ul                   {justify-content: center;}
+ .share-game.social-media ul li a              {border-radius: 10px; width: 55px; height: 55px;}
+
+
+ /* header  */
+ header                                         {transition: all 0.4s; padding: 14px 0px; width: 100%; position: fixed; z-index: 99;}
+ header .navbar                                 {padding: 0px;}
+ header .navbar-light .navbar-nav .nav-link     {padding: 0px; font-size: 18px; line-height: 22px; font-weight: 500; letter-spacing: 0.5px;   color: var(--gray-color);}
+ header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 65px;}
+ header .navbar-nav                             {align-items: center;}
+ header .navbar-brand img                       {max-width: 128px;}
+ .bg-header                                     {background-color: var(--red-color-2); transform:translateY(-100%);}
+ 
+ /* chatbot button  */
+ .chat-bot-btn                                  {cursor: pointer; width: 70px; height: 70px; display: inline-flex; align-items: center; justify-content: center; border-radius: 100px; border: 2px solid var(--white-color); background-color: var(--red-color-3);}
+ .chatbot-box                                   {max-width: 296px; max-height: 500px;}
+ .chatbot-profile                               {display: flex; align-items: center; }
+ .chatbot-profile span                          {font-size: 14px; line-height: 20px; font-weight: bold; padding-left: 10px;}
+
+ /* toggle chatbot  */
+ .chatbot-box                                   {overflow: hidden; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);}
+ .chatbot-header                                {padding: 8px 16px; background-color: var(--gray-color-2);}
+ .chatbot-dp                                    {width: 34px; height: 34px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center;}
+ .chatbot-dp img                                {width: 100%; object-fit: cover;}
+ .chatbot-header                                {display: flex; align-items: center; justify-content: space-between;}
+ .chat-box                                      {padding: 24px 8px; display: flex; align-items: flex-end;}
+ .chat-box ul                                   {padding: 0px; margin: 0px; list-style: none; min-width: 100%;}
+ .chat-box .chatbot-dp                          {width: 16px; height: 16px;}
+ .chat-box ul li .massage                       {display: flex; align-items: flex-end; width: 100%;}
+ .chat-box ul li span                           {padding: 8px 16px; max-width: 100%; border-radius: 10px; font-weight: 500; font-size: 16px; line-height: 20px;}
+ .chat-box ul li:nth-child(odd) span            {margin-left: 4px;  background-color: #F4F4F4; ;}
+ .chat-box ul li:nth-child(even) span           {margin-left: 4px;  background-color: #EDC278; ;}
+ .chat-box ul li:not(:last-child)               {margin-bottom: 14px;}
+ .chat-box ul li:nth-child(odd) .massage        {justify-content: start;}
+ .chat-box ul li:nth-child(even) .massage       {justify-content: end;}
+ .chat-box ul li:nth-child(even) .massage .chatbot-dp{order: 2; }
+ .chat-box ul li:nth-child(even) .massage span{order: 1; margin-left: 0px; margin-right: 4px;}
+ .chat-scroll                                   {height: 300px; overflow: auto;}
+
+
+
+ 
+ /* home banner  */
+ .home-banner                                   {padding-top: 104px; height: calc(100vh - 50px); overflow: hidden; min-height: 720px; background-color: var(--red-color-2); border-radius: 0px 0px 200px 0px;}
+ .banner-item                                   {display: flex; align-items: center;}
+ .home-banner                                   {font-weight: bold;}
+ .banner-right img                              {max-width: 100%; width: 100%; max-height: 100%; object-fit: contain;}
+ .banner-left                                   {max-width: 520px;}
+ .banner-right                                  {width: 100%; position: relative; display: inline-flex; align-items: self-end;}
+ .home-banner .slick-dots                       {bottom: 60px; width: auto;}
+ .home-banner .slick-dotted.slick-slider        {margin: 0px;}
+ .home-banner h1                                {padding-bottom: 34px; text-transform: uppercase;}
+ .home-banner h4                                {padding-bottom: 34px; max-width: 364px; font-weight: 400;}
+ .home-banner .slick-list, .slick-track         {height: 100%;}
+ .home-banner .slick-dots li                    {width: 12px; height: 12px; outline: 2px solid white; border-radius: 50%;}
+ .home-banner .slick-dots li button:before      {padding: 0px; width: 12px; content: ''; height: 12px; background-color: var(--white-color);}
+ .home-banner .slick-dots li.slick-active button:before{opacity: 1;}
+ .home-banner .slick-dots li button:before      {opacity: 0;}
+ .home-banner .slick-dots li:not(:last-child)   {margin-right: 15px;}
+ .home-banner .slick-slide                      {height: auto;}
+ .home-banner .slick-track                      {display: flex;}
+
+ /* about  */
+ .about-content h2, .about-desc                 {padding-bottom: 30px;}
+
+
+ /* join with us  */
+ .section-title                                 {padding-bottom: 100px;}
+ .join-with-us                                  {background-color: var(--red-color-4); border-radius: 0px 0px 0px 200px;}
+ .join-us-conten                                {max-width: 364px;}
+ .join-us-conten h3                             {padding-bottom: 18px;}
+ .join-us-conten .join-us-desc                  {padding-bottom: 34px;}
+ .time-line .row                                { padding-bottom: 100px;}
+ .game-screen .screenshot-bg-circle             {width: 20%; height: 200%; top: -24px;}
+ .game-screen .mobile-frame:hover  .screenshot-bg-circle{top: 24px !important;}
+ .timeline-content                              {padding-bottom: 24px; max-width: 379px; text-align: center; position: relative;}
+ .timeline-content h4                           {padding-bottom: 16px;}
+ .timeline-content p                            {padding-bottom: 24px;}
+ .timeline-dot                                  {position: absolute; z-index: 1; left: -10px; top: 0px; width: 20px; height: 20px; border-radius: 50%; background: var(--circle-color);}
+ .join-time-line                                {padding: 0px 50px; margin-bottom: 30px; position: relative; border-radius:0 0 0 50px; border-left: 2px dashed var(--circle-color); border-bottom: 2px dashed var(--circle-color);}
+ .timeline-content .timeline-dot                {top: -42px; left: 50%; transform: translateX(-50%);}
+ .before-transprent .bg-trans                   {width: 50%; z-index: 0; height: 6px ; background-color:  var(--red-color-4); position: absolute; top: -33px; right: -10px;}
+ .choose-app                                    { display: inline-flex; position: relative; flex-direction: column; align-items: center;}
+ .choose-app .timeline-dot                      {top: -42px; left: unset;}
+ .timeline-screen                               {display: flex;}
+ .game-screen                                   {display: flex; align-items: center;}
+ .left-screen                                   {width: 100%; display: flex; justify-content: end;}
+
+ /* choose us  */
+ .choose-timeline                               {padding: 0px 50px;}
+ .choose-content                                {max-width: 364px;}
+ .choose-content .bg-btn                        {margin-top: 34px;}
+ .choose-content h4                             {padding-bottom: 18px;}
+ .choose-screen                                 {position: relative ; z-index: 2;}
+ .choose-img                                    {overflow: hidden; border: 5px solid var(--burgundy-color); display: inline-block; border-radius: 50px 50px 0px 50px; box-shadow: 24px 24px 0px var(--red-color-3); transition: all 0.4s;}
+ .choose-img:hover                              {box-shadow: -24px -24px 0px var(--red-color-3);}
+ .choose-screen.right .choose-img               {border-radius: 50px 50px 0px 50px; box-shadow: 24px 24px 0px var(--red-color-3);}
+ .choose-screen.right .choose-img:hover         {box-shadow: -24px -24px 0px var(--red-color-3);}
+ .right-time-line                               {padding: 0px 50px 80px; position: relative;}
+ .left-timeline                                 {padding: 80px 50px 0px; position: relative;}
+ .right-time-line-border                        {position: absolute; height: calc(50% + 40px); width: 50%; top: calc(50% - 40px); right: 0; border-right: 2px dashed var(--circle-color); border-radius: 0px 0px 50px 0px; border-bottom: 2px dashed var(--circle-color);}
+ .left-time-line-border                         {position: absolute; height: calc(50% + 40px); width: 50%; left: 0; top: -2px; border-radius: 50px 0px 0px 0px; border-left: 2px dashed var(--circle-color); border-top: 2px dashed var(--circle-color);}
+ .right-time-line-border span                   {left: calc(100% - 10px);}
+ .left-time-line-border span                    {top: 100%;}
+ 
+
+
+ /* how is work  */
+ .how-is-work                                   {background-color: var(--red-color-2); border-radius: 0px 200px 0px 0px;}
+ .how-is-content                                {max-width: 720px; margin: 0 auto; text-align: center; }
+ .how-img                                       {padding-top: 74px; display: flex; justify-content: center;}
+ .burgundy                                      {background-color: var(--burgundy-lite)}
+ .poin-one, .poin-two                           {padding: 14px 34px; max-width: 334px; background-color: var(--white-color);}
+ .how-img       h4                              {padding-bottom: 4px;}
+ .how-img p                                     {padding-bottom: 0px;}
+ .how-img .screen-shot.burgundy                 {box-shadow: -24px -24px 0px  var(--burgundy-lite);}
+ .how-img .screen-shot.burgundy:hover           {box-shadow: 24px 24px 0px  var(--burgundy-lite);}
+ .poin-one                                      {margin-bottom: 24px; border-radius: 35px 35px 0px 35px;}
+ .poin-two                                      {border-radius: 35px 0px 35px 35px;}
+ .how-is-right .poin-one                        {border-radius: 35px 35px 35px 0px; }
+ .how-is-right  .poin-two                       {border-radius: 0px 35px 35px 35px;}
+ .how-is-left                                   {position: relative ; z-index: 3;}
+ .how-is-right                                  {position: relative; align-self: flex-end; z-index: 2;}
+ .how-is-content .cicrle-text-bg::after         {transform: rotate(-7.93deg); border: 3px solid #FFB3B0;}
+
+ /* footer  */
+ .footer-content                                {padding: 60px 0px; border-bottom: 1px solid #CECECE; display: flex; align-items: center; justify-content: space-between;}
+ .social-media   ul                             {padding: 16px 0px 0px; margin: 0px; list-style: none; display: flex;}
+ .social-media ul li a                          {width: 36px; height: 36px; transition: all 0.3s; border: 1px solid #B0B0B0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;}
+ .social-media ul li:not(:last-child)           {margin-right: 16px;}
+ .social-media ul li a:hover                    {background-color: #5b5b5b;}
+ .social-media ul li a:hover img                {filter: invert(100%) sepia(25%) saturate(46%) hue-rotate(259deg) brightness(102%) contrast(102%);}
+ .left-desc                                     {max-width: 300px;}
+ .left-desc h4                                  {padding-bottom: 8px;}
+ .footer-navbar ul                              {padding: 0px; margin: 0px; list-style: none; display: flex; flex-wrap: wrap;}
+ .footer-navbar                                 {max-width: 752px; width: 100%;}
+ .footer-navbar ul li                           {margin-bottom: 8px; width: 33.33%; line-height: 0px;}
+ .footer-navbar ul li a                         {font-size: 16px; display: inline-block; font-weight: 500; text-decoration: none; color: var(--gray-color); line-height: 22px; letter-spacing: 0.5px;}
+ .copy-right p                                  { padding: 30px 0px;}
+ 
+
+
+ /* responsive start  */
+ @media only screen and (min-width: 1400px) and (max-width: 1599px)
+{
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px)
+{
+ /* typography  */
+ h1                                              {font-size: 50px; line-height: 60px; font-weight: bold;}
+ h2                                              {font-size: 40px; line-height: 50px; font-weight: bold;}
+ h3                                              {font-size: 24px; line-height: 30px;}
+ h4                                              {font-size: 22px; line-height: 28px; font-weight: 500;}
+ p                                               {padding-bottom: 16px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* common css  */
+  section                                        {padding: 80px 0px;}
+ .section-title                                  {padding-bottom: 60px;}
+ .mobile-frame                                   {max-width: 240px;}
+ .screenshot-bg-circle                           {height: 114%;}
+ .chat-bot-btn                                   {width: 66px; height: 66px;}
+.chatbot-button-box                              {bottom: 60px; right: 30px;}
+.chat-bot-btn img                                {max-width: 40px;}
+
+/* Popup css start  */
+.signup-content                                  {padding: 100px 0px;}
+ 
+ 
+ /* home banner  */
+ .home-banner                                    {min-height: 700px; height: calc(100vh - 50px); border-radius: 0px 0px 150px 0px;}
+ .home-banner h1                                 {padding-bottom: 20px;}
+ .home-banner h4                                 {padding-bottom: 20px;}
+
+ /* about section  */
+ .about-content h2, .about-desc                  {padding-bottom: 10px;}
+
+  /* join us section  */
+  .join-with-us                                   {padding-bottom: 0px; border-radius: 0px 0px 0px 150px;}
+  .join-time-line                                 {padding: 0px 30px;}
+  .time-line .row                                 {padding-bottom: 80px;}
+  .game-screen .mobile-frame                      {width: 100%; max-width: 100%;}
+
+  /* why choose us  */
+  .choose-content                                 {padding: 20px;}
+  .join-us-conten .join-us-desc                   {padding-bottom: 10px;}
+
+  /* how is work  */
+  .how-img                                        {padding-top: 50px;}
+  .how-is-work                                    {border-radius: 0px 150px 0px 0px;}
+
+  /* footer  */
+  .footer-content                                 {padding: 50px 0px;}
+  .social-media ul                                {padding: 0px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+ /* typography  */
+ h1                                              {font-size: 42px; line-height: 50px; font-weight: bold;}
+ h2                                              {font-size: 36px; line-height: 45px; font-weight: bold;}
+ h3                                              {font-size: 24px; line-height: 30px;}
+ h4                                              {font-size: 20px; line-height: 26px; font-weight: 500;}
+ p                                               {padding-bottom: 16px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* utility */
+ .primary-btn                                   {padding: 10px 22px;}
+
+ /* common css  */
+ .screenshot-bg-circle                          {height: 108%;}
+ .screen-shot                                   {box-shadow: -20px -20px 0px var(--red-color-3);}
+ .mobile-frame:hover .screen-shot               {box-shadow: 20px 20px 0px var(--red-color-3);}
+ section                                        {padding: 70px 0px;}
+ .section-title                                 {padding-bottom: 50px;}
+ .mobile-frame                                  {max-width: 220px;}
+ .screenshot-bg-circle                          {height: 112%;}
+ .chat-bot-btn                                   {width: 60px; height: 60px;}
+ .chatbot-button-box                              {bottom: 50px; right: 30px;}
+ .chat-bot-btn img                                {max-width: 40px;}
+ 
+
+ /* Popup css start  */
+ .signup-content                                  {padding: 90px 0px;}
+ .signup-modals .modal-dialog                     {max-width: 920px;}
+ .signup-modals .btn-close                        {width: 44px; height: 44px;}
+ .game-popup .signup-content                       {padding: 50px 0px;}
+ .signup-content h2                               {padding-bottom: 16px;}
+ .signup-content p                               {padding-bottom: 28px;}
+ .oops-img                                     {padding-bottom: 20px; max-width: 268px;}
+ .game-share-popup-content h2                  {padding-bottom: 20px;}
+ .share-game.social-media ul li a              {border-radius: 10px; width: 45px; height: 45px;}
+ .share-game.social-media ul li a img           {max-width: 30px;}
+
+ /* header  */
+ header .navbar-brand img                       {max-width: 120px;}
+ header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 50px;}
+
+ /* home banner  */
+ .home-banner                                    {min-height: 500px; height: auto; border-radius: 0px 0px 130px 0px;}
+ .home-banner h1                                 {padding-bottom: 20px;}
+ .home-banner h4                                 {padding-bottom: 20px;}
+ .home-banner .slick-dots                        {bottom: 30px;}
+ .home-banner .slick-dots li button:before       {width: 8px; height: 8px;}
+ .home-banner .slick-dots li                     {width: 8px; height: 8px;} 
+
+ /* about section  */
+ .about-content h2, .about-desc                  {padding-bottom: 20px;}
+
+ /* join us section  */
+ .join-with-us                                   {padding-bottom: 0px; border-radius: 0px 0px 0px 130px;}
+ .join-time-line                                 {padding: 0px 30px;}
+ .time-line .row                                 {padding-bottom: 70px;}
+ .game-screen .mobile-frame                      {width: 100%; max-width: 100%;}
+
+
+ /* why choose us  */
+ .choose-content                                 {padding: 20px;}
+ .join-us-conten .join-us-desc                   {padding-bottom: 10px;}
+ .right-time-line                                {padding: 0px 50px 40px;}
+ .left-timeline                                  {padding: 40px 50px 0px;}
+ .choose-timeline                                {padding: 0px;}
+ .choose-screen                                  {max-width: 90%;}
+
+ /* how is work  */
+ .how-is-work                                    {border-radius: 0px 130px 0px 0px;}
+ .poin-one, .poin-two                            {padding: 12px 26px;}
+ .how-img                                        {padding-top: 50px;}
+
+ /* footer  */
+ .left-desc                                      {margin-right: 30px;}
+ .footer-content                                 {padding: 40px 0px}
+ .copy-right p                                   {padding: 20px 0px;}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+ /* typography  */
+ h1                                              {font-size: 34px; line-height: 40px; font-weight: bold;}
+ h2                                              {font-size: 30px; line-height: 36px; font-weight: bold;}
+ h3                                              {font-size: 22px; line-height: 28px;}
+ h4                                              {font-size: 18px; line-height: 26px; font-weight: 500;}
+ p                                               {padding-bottom: 16px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* utility */
+ .primary-btn                                   {padding: 10px 22px;}
+
+ /* common css  */
+ .screenshot-bg-circle                          {height: 108%;}
+ .screen-shot                                   {box-shadow: -20px -20px 0px var(--red-color-3);}
+ .mobile-frame:hover .screen-shot               {box-shadow: 20px 20px 0px var(--red-color-3);}
+ section                                        {padding: 70px 0px;}
+ .section-title                                 {padding-bottom: 40px;}
+ .mobile-frame                                  {max-width: 220px;}
+ .screenshot-bg-circle                          {height: 112%;}
+ .content-wrap                                  {padding: 0px 30px;}
+ .primary-btn                                   {padding: 8px 20px ; line-height: 20px; font-size: 17px;}
+ .chat-bot-btn                                   {width: 55px; height: 55px;}
+ .chatbot-button-box                              {bottom: 40px; right: 20px;}
+ .chat-bot-btn img                                {max-width: 35px;}
+
+ /* Popup css start  */
+ .signup-content                                  {padding: 70px 0px;}
+ .signup-modals .modal-dialog                     {max-width: 690px;}
+ .signup-modals .btn-close                        {width: 38px; height: 38px;}
+ .game-popup .signup-content                      {padding: 50px 0px;}
+ .form-group .form-control                        {padding: 12px 22px;}
+ .signup-modals .form-check-label                 {font-size: 14px;}
+ .signup-content h2                               {padding-bottom: 12px;}
+ .signup-content p                                {padding-bottom: 20px;}
+ .share-game.social-media ul li a              {border-radius: 10px; width: 40px; height: 40px;}
+ .share-game.social-media ul li a img           {max-width: 26px;}
+                                         
+
+ /* header  */
+ header                                         {padding: 10px 0px;}
+ header .navbar-brand img                       {max-width: 100px;}
+ header .navbar-light .navbar-nav .nav-link     {font-size: 16px ; line-height: 20px;}
+ header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 30px;}
+
+ /* home banner  */
+ .home-banner                                    {min-height: auto; height: auto; border-radius: 0px 0px 100px 0px;}
+ .home-banner h1                                 {padding-bottom: 10px;}
+ .home-banner h4                                 {padding-bottom: 20px;}
+ .home-banner .slick-dots                        {bottom: 30px;}
+ .home-banner .slick-dots li button:before       {width: 8px; height: 8px;}
+ .home-banner .slick-dots li                     {width: 8px; height: 8px;}
+ .home-banner .slick-dots                        {bottom: 10px;} 
+
+ /* about section  */
+ .about-content h2, .about-desc                  {padding-bottom: 20px;}
+
+ /* join us section  */
+ .join-with-us                                   {padding-bottom: 0px; border-radius: 0px 0px 0px 100px;}
+ .join-time-line                                 {padding: 0px 30px;}
+ .time-line .row                                 {padding-bottom: 50px;}
+ .game-screen .mobile-frame                      {width: 100%; max-width: 100%;}
+ .join-with-us .content-wrap                     {padding: 0px;}
+
+
+ /* why choose us  */
+ .choose-content                                 {padding: 0px;}
+ .join-us-conten .join-us-desc                   {padding-bottom: 10px;}
+ .right-time-line                                {padding: 0px 50px 40px;}
+ .left-timeline                                  {padding: 40px 50px 0px;}
+ .choose-timeline                                {padding: 0px;}
+ .choose-screen                                  {max-width: 90%;}
+ .right-time-line 
+
+ /* how is work  */
+ .poin-one, .poin-two                            {padding: 12px 26px;}
+ .how-img                                        {padding-top: 50px;}
+ .how-is-work                                    {border-radius: 0px 100px 0px 0px;}
+
+ /* footer  */
+ .left-desc                                      {margin-right: 30px;}
+ .footer-content                                 {padding: 40px 0px}
+ .copy-right p                                   {padding: 20px 0px;}
+ .social-media ul                                {padding: 0px;}
+
+}
+
+ @media only screen and (min-width: 576px) and (max-width: 767px)
+{
+ /* typography  */
+ h1                                              {font-size: 34px; line-height: 40px; font-weight: bold;}
+ h2                                              {font-size: 30px; line-height: 36px; font-weight: bold;}
+ h3                                              {font-size: 22px; line-height: 28px;}
+ h4                                              {font-size: 18px; line-height: 26px; font-weight: 500;}
+ p                                               {padding-bottom: 16px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* utility */
+ .primary-btn                                   {padding: 10px 22px;}
+
+ /* common css  */
+ .screenshot-bg-circle                          {height: 108%;}
+ .screen-shot                                   {box-shadow: -20px -20px 0px var(--red-color-3);}
+ .mobile-frame:hover .screen-shot               {box-shadow: 20px 20px 0px var(--red-color-3);}
+ section                                        {padding: 70px 0px;}
+ .section-title                                 {padding-bottom: 40px;}
+ .mobile-frame                                  {max-width: 220px;}
+ .screenshot-bg-circle                          {height: 112%;}
+ .content-wrap                                  {padding: 0px 30px;}
+ .primary-btn                                   {padding: 8px 20px ; line-height: 20px; font-size: 17px;}
+ .primary-btn                                   {padding: 8px 20px ; line-height: 20px; font-size: 17px;}
+ .chat-bot-btn                                   {width: 50px; height: 50px;}
+ .chatbot-button-box                              {bottom: 40px; right: 20px;}
+ .chat-bot-btn img                                {max-width: 30px;}
+
+ /* Popup css start  */
+.signup-content                                  {padding: 70px 0px;}
+.signup-modals .modal-dialog                     {max-width: 500px;}
+.signup-modals .btn-close                        {width: 38px; height: 38px;}
+.game-popup .signup-content                      {padding: 50px 0px;}
+.form-group .form-control                        {padding: 10px 20px;}
+.signup-modals .form-check-label                 {font-size: 14px;}
+.signup-modals .about-screen                     {display: flex; justify-content: start; padding-bottom: 0px;}
+.signup-content h2                               {padding-bottom: 10px;}
+ .signup-content p                               {padding-bottom: 16px;}
+ .share-game.social-media ul li a              {border-radius: 10px; width: 40px; height: 40px;}
+ .share-game.social-media ul li a img           {max-width: 26px;}
+
+ /* header  */
+ header                                         {padding: 10px 0px;}
+ header .navbar-brand img                       {max-width: 100px;}
+ header .navbar-light .navbar-nav .nav-link     {font-size: 16px ; line-height: 20px;}
+ header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 0px;}
+ header .navbar-light .navbar-nav .nav-item:not(:last-child){margin-left: 0px; margin-bottom: 30px;}
+ header .navbar-light .navbar-toggler           {border: none;}
+ header .navbar-toggler:focus                   {box-shadow: none;}
+ header .navbar-nav                             {padding: 80px 0px; justify-content: center; align-items: center; background: var(--red-color-2); } 
+
+ /* home banner  */
+ .home-banner                                    {padding-top: 0px; min-height: auto; height: auto; border-radius: 0px 0px 100px 0px;}
+ .home-banner h1                                 {padding-bottom: 40px;}
+ .home-banner h4                                 {padding-bottom: 20px; max-width: 100%; }
+ .home-banner .slick-dots                        {bottom: 30px;}
+ .home-banner .slick-dots li button:before       {width: 8px; height: 8px;}
+ .home-banner .slick-dots li                     {width: 8px; height: 8px;}
+ .home-banner .slick-dots                        {bottom: 10px;} 
+ .banner-item                                    {flex-direction: column;}
+ .banner-left                                    {padding-top: 150px; padding-bottom: 40px;}
+
+ /* about section  */
+ .about-content h2, .about-desc                  {padding-bottom: 20px;}
+ .about-us .content-wrap                         {padding: 0px;}
+
+ /* join us section  */
+ .join-with-us                                   {padding-bottom: 0px; border-radius: 0px 0px 0px 100px;}
+ .join-time-line                                 {padding: 0px 50px; border-bottom: none; border-radius: 0 0 0 0px; margin: 0px;}
+ .time-line .row                                 {padding-bottom: 50px;}
+ .game-screen .mobile-frame                      {width: 100%; max-width: 100%;}
+ .join-with-us .content-wrap                     {padding: 0px;}
+ .about-screen                                   {padding-left: 50px; padding-bottom: 40px;}
+ .join-us-conten                                 {padding-bottom: 50px; max-width: 100%; }
+ .left-screen                                    {justify-content: start;}
+ .timeline-screen                                {padding-left: 50px; padding-bottom: 50px; border-left: 2px dashed var(--circle-color);}
+ .choose-app .timeline-dot                       {top: 50%; left: -60px;}
+ .before-transprent .bg-trans                    {width: 4px; height: calc(50% + 60px); top: 50%; left: -52px; }
+ .choose-app .timeline-dot                       {top: 0%;}
+ .timeline-screen.border-none                    {border-left: none;}
+ .choose-app                                     {max-width: 268px;}
+ 
+
+ /* why choose us  */
+ .choose-content                                 {padding: 0px;}
+ .join-us-conten .join-us-desc                   {padding-bottom: 10px;}
+ .right-time-line                                {padding: 0px 50px 60px;}
+ .left-timeline                                  {padding:  0px 50px 0px;}
+ .choose-timeline                                {padding: 0px;}
+ .choose-screen                                  {max-width: 90%;}
+ .choose-us .content-wrap                        {padding: 0px;}
+ .left-time-line-border span                     {top: 0%;}
+ .choose-content                                 {max-width: 100%;}
+ .right-time-line-border                         {left: 0; border-bottom: none; top: 0; height: 100%; border-right: 0px dashed var(--circle-color); border-left: 2px dashed var(--circle-color);}
+ .right-time-line-border span                    {left: -10px;}
+ .left-time-line-border                          {border-top: none; border-radius: 0px 0px 0px 0px; border-left: none;}
+
+ /* how is work  */
+ .poin-one, .poin-two                            {padding: 12px 26px;}
+ .how-img                                        {padding-top: 50px; flex-direction: column;}
+ .how-is-work                                    {border-radius: 0px 100px 0px 0px;}
+ .poin-one, .poin-two                            {max-width: 100%; border-radius: 20px 20px 20px 20px;}
+ .how-is-right .poin-one, .how-is-right .poin-two{border-radius: 20px 20px 20px 20px;}
+ .how-is-left                                    {margin-bottom: 60px;}
+ .how-is-right                                   {margin-top: 40px;}
+ .how-is-screen                                  {text-align: center;}
+ 
+ 
+
+ /* footer  */
+ .left-desc                                      {margin-right: 30px;}
+ .footer-content                                 {padding: 26px 0px}
+ .copy-right p                                   {padding: 20px 0px;}
+ .social-media ul                                {padding: 0px;}
+ .footer-navbar ul li                            {width: 100%;}
+
+}
+
+@media only screen and (max-width: 575px)
+{
+
+ /* typography  */
+ h1                                              {font-size: 32px; line-height: 38px; font-weight: bold;}
+ h2                                              {font-size: 29px; line-height: 34px; font-weight: bold;}
+ h3                                              {font-size: 20px; line-height: 26px;}
+ h4                                              {font-size: 17px; line-height: 25px; font-weight: 500;}
+ p                                               {padding-bottom: 14px; font-size: 16px;  line-height: 22px; font-weight: 400;}
+
+ /* utility */
+ .primary-btn                                   {padding: 10px 22px;}
+
+ /* common css  */
+ .screenshot-bg-circle                          {height: 108%;}
+ .screen-shot                                   {box-shadow: -12px -12px 0px var(--red-color-3);}
+ .mobile-frame:hover .screen-shot               {box-shadow: 12px 12px 0px var(--red-color-3);}
+ section                                        {padding: 40px 0px;}
+ .section-title                                 {padding-bottom: 40px;}
+ .mobile-frame                                  {max-width: 190px;}
+ .screenshot-bg-circle                          {height: 100%;}
+ .content-wrap                                  {padding: 0px 30px;}
+ .primary-btn                                   {padding: 8px 20px ; line-height: 20px; font-size: 17px;}
+ .how-img .screen-shot.burgundy                 {box-shadow: -12px -12px 0px var(--burgundy-lite);}
+ .how-img .screen-shot.burgundy:hover           {box-shadow: 12px 12px 0px var(--burgundy-lite);}
+ .choose-img                                    {box-shadow: 12px 12px 0px var(--red-color-3);}
+ .choose-img:hover                              {box-shadow: -12px -12px 0px var(--red-color-3);}
+ .choose-screen.right .choose-img               {box-shadow: 12px 12px 0px var(--red-color-3);}
+ .choose-screen.right .choose-img:hover               {box-shadow: -12px -12px 0px var(--red-color-3);}
+ .chat-bot-btn                                   {width: 50px; height: 50px;}
+ .chatbot-button-box                              {bottom: 20px; right: 20px;}
+ .chat-bot-btn img                                {max-width: 30px;}
+
+  /* Popup css start  */
+.signup-content                                  {padding: 40px 0px; max-width: 100%;}
+.signup-modals .modal-dialog                     {max-width: 100%;}
+.signup-modals .btn-close                        {width: 30px; height: 30px;}
+.game-popup .signup-content                      {padding: 40px 0px;}
+.form-group .form-control                        {padding: 10px 20px;}
+.signup-modals .form-check-label                 {font-size: 14px;}
+.signup-modals .about-screen                     {display: flex; justify-content: start; padding-bottom: 0px;}
+.display-none                                    {display: none;}
+.signup-content h2                               {padding-bottom: 8px;}
+.signup-content p                                {padding-bottom: 12px;}
+.play-game button                                {width: 44px; height: 44px;}
+.play-game button img                            {max-width: 14px;}
+.share-game.social-media ul li a              {border-radius: 10px; width: 40px; height: 40px;}
+.share-game.social-media ul li a img           {max-width: 24px;}
+ /* header  */
+ header                                         {padding: 10px 0px;}
+ header .navbar-brand img                       {max-width: 90px;}
+ header .navbar-light .navbar-nav .nav-link     {font-size: 16px ; line-height: 20px;}
+ header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 0px;}
+ header .navbar-light .navbar-nav .nav-item:not(:last-child){margin-left: 0px; margin-bottom: 30px;}
+ header .navbar-light .navbar-toggler           {border: none;}
+ header .navbar-toggler:focus                   {box-shadow: none;}
+ header .navbar-nav                             {padding: 60px 0px; justify-content: center; align-items: center; background: var(--red-color-2); } 
+
+ 
+
+ /* home banner  */
+ .home-banner                                    {padding-top: 0px; min-height: auto; height: auto; border-radius: 0px 0px 76px 0px;}
+ .home-banner h1                                 {padding-bottom:20px;}
+ .home-banner h4                                 {padding-bottom: 20px; max-width: 100%; }
+ .home-banner .slick-dots                        {bottom: 30px;}
+ .home-banner .slick-dots li button:before       {width: 8px; height: 8px;}
+ .home-banner .slick-dots li                     {width: 8px; height: 8px;}
+ .home-banner .slick-dots                        {bottom: 10px;} 
+ .banner-item                                    {flex-direction: column;}
+ .banner-left                                    {padding-top: 150px; padding-bottom: 20px;}
+
+ /* about section  */
+ .about-content h2, .about-desc                  {padding-bottom: 0px;}
+ .about-us .content-wrap                         {padding: 0px;}
+
+ /* join us section  */
+ .join-with-us                                   {padding-bottom: 0px; border-radius: 0px 0px 0px 76px;}
+ .join-time-line                                 {padding: 0px 26px; border-bottom: none; border-radius: 0 0 0 0px; margin: 0px;}
+ .time-line .row                                 {padding-bottom: 50px;}
+ .game-screen .mobile-frame                      {width: 100%; max-width: 100%;}
+ .join-with-us .content-wrap                     {padding: 0px;}
+ .about-screen                                   {padding-left: 50px; padding-bottom: 40px;}
+ .join-us-conten                                 {padding-bottom: 50px; max-width: 100%; }
+ .left-screen                                    {justify-content: start;}
+ .timeline-screen                                {padding-left: 26px; padding-bottom: 30px; border-left: 2px dashed var(--circle-color);}
+ .choose-app .timeline-dot                       {top: 50%; left: -35px;}
+ .before-transprent .bg-trans                    {width: 4px; height: calc(50% + 60px); top: 50%; left: -52px; }
+ .choose-app .timeline-dot                       {top: 0%;}
+ .timeline-screen.border-none                    {border-left: none;}
+ .choose-app                                     {max-width: 268px;}
+ 
+
+ /* why choose us  */
+ .choose-content                                 {padding: 0px;}
+ .join-us-conten .join-us-desc                   {padding-bottom: 10px;}
+ .right-time-line                                {padding: 0px 26px 40px;}
+ .left-timeline                                  {padding:  0px 26px 0px;}
+ .choose-timeline                                {padding: 0px;}
+ .choose-screen                                  {max-width: 90%;}
+ .choose-us .content-wrap                        {padding: 0px;}
+ .left-time-line-border span                     {top: 0%;}
+ .choose-content                                 {max-width: 100%;}
+ .right-time-line-border                         {left: 0; border-bottom: none; top: 0; height: 100%; border-right: 0px dashed var(--circle-color); border-left: 2px dashed var(--circle-color);}
+ .right-time-line-border span                    {left: -10px;}
+ .left-time-line-border                          {border-top: none; border-radius: 0px 0px 0px 0px; border-left: none;}
+
+ /* how is work  */
+ .poin-one, .poin-two                            {padding: 12px 26px;}
+ .how-img                                        {padding-top: 30px; flex-direction: column;}
+ .how-is-work                                    {border-radius: 0px 76px 0px 0px;}
+ .poin-one, .poin-two                            {max-width: 100%; border-radius: 20px 20px 20px 20px;}
+ .how-is-right .poin-one, .how-is-right .poin-two{border-radius: 20px 20px 20px 20px;}
+ .how-is-left                                    {margin-bottom: 40px;}
+ .how-is-right                                   {margin-top: 30px;}
+ .how-is-screen                                  {text-align: center;}
+ 
+ 
+
+ /* footer  */
+ .left-desc                                      {margin-right: 30px;}
+ .footer-content                                 {padding: 26px 0px}
+ .copy-right p                                   {padding: 20px 0px;}
+ .social-media ul                                {padding: 0px;}
+ .footer-navbar ul li                            {width: 100%; }
+ .footer-navbar ul li a                          { font-size: 14px; line-height: 20px;}
+}
+
+@media only screen  and (max-width: 355px)
+{
+    .screenshot-bg-circle{height: 96%;}  
+}
+
+
