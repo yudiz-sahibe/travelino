@@ -214,6 +214,8 @@ section                                         {padding: 100px 0px;}
 button                                          {background-color: transparent; border: none;}
 ul                                              {padding: 0px; margin: 0px; list-style: none;}
 .bg-header-color                                {background-color: var(--red-color-2); position: relative;}
+.mouse-animation.center-cicle                   {transform: rotate();}
+.mouse-animation.center-cicle::after            {border: 2px solid red; transform: unset; height: 100%; left: -10%;} 
 
 /* Popup css start  */
  .signup-modals .modal-dialog                  {max-width: 1140px;}
@@ -242,13 +244,21 @@ ul                                              {padding: 0px; margin: 0px; list
 
 
  /* header  */
- header                                         {transition: all 0.4s; padding: 14px 0px; width: 100%; position: fixed; z-index: 99;}
+ header                                         {transition: all 0.4s; background-color: var(--red-color-2); padding: 14px 0px; width: 100%; position: fixed; z-index: 99;}
  header .navbar                                 {padding: 0px;}
- header .navbar-light .navbar-nav .nav-link     {padding: 0px; font-size: 18px; line-height: 22px; font-weight: 500; letter-spacing: 0.5px;   color: var(--gray-color);}
+ header .navbar-light .navbar-nav .nav-link     {padding: 0px 0px 6px; overflow: hidden; transition: all 0.3s;  font-size: 18px; position: relative; line-height: 22px; font-weight: 500; letter-spacing: 0.5px;   color: var(--gray-color);}
  header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 65px;}
+ header  .navbar-nav .nav-item .nav-link::after{position: absolute; transition: all 0.3s; content: ''; width: 100%; height: 2px; background-color: white; bottom: 0; left: -100%;}
  header .navbar-nav                             {align-items: center;}
+ header  .navbar-nav .nav-item .nav-link:hover::after{left: 0;}
+ header  .navbar-nav .nav-item .nav-link.active::after{left: 0;}
+ header  .navbar-nav .nav-item .nav-link.active{color: white;}
+
+ .navbar-nav .nav-item .nav-link:hover          {color: white;}
  header .navbar-brand img                       {max-width: 128px;}
  .bg-header                                     {background-color: var(--red-color-2); transform:translateY(-100%);}
+ header nav .nav-link                           {position: relative;}
+ .header nav ul li .nav-link::before                   {content: ''; width: 100%; height: 2px; position: absolute; top: 100%; right: 0;}
  
  /* chatbot button  */
  .chat-bot-btn                                  {cursor: pointer; z-index: -1; position: absolute; right: 0; bottom: 0; width: 70px; height: 70px; display: inline-flex; align-items: center; justify-content: center; border-radius: 100px; border: 2px solid var(--white-color); background-color: var(--red-color-3);}
@@ -323,6 +333,10 @@ ul                                              {padding: 0px; margin: 0px; list
  .home-banner .slick-dots li:not(:last-child)   {margin-right: 15px;}
  .home-banner .slick-slide                      {height: auto;}
  .home-banner .slick-track                      {display: flex;}
+ .mouseover-object                              {max-width: 50%; position: absolute; top: 6%; right: 0;}
+ .mouseover-object                      img     {width: 100%; transition: all 0.2s;}
+ .mouse-animation                               {position: absolute; top: -20%; left: 0; width: 100%; height: 100%; }
+ .mouse-animation::after                        {position: absolute; border-radius: 50%; transform: rotate(345deg); content: ''; width: 100%; height: 80%; border-radius: 50%; border: 2px solid white; top: 0; left: 0;}
 
  /* about  */
  .about-content h2, .about-desc                 {padding-bottom: 30px;}
@@ -404,25 +418,45 @@ ul                                              {padding: 0px; margin: 0px; list
 
  /* connect page  */
  .connect                                       {min-height: calc(100vh - 104px);}
- .connect-content                               {padding: 100px 0px 32px 0px;}
+ .connect-content                               {padding: 200px 0px 32px 0px;}
  .connect-with-sm                               {padding: 60px; background-color: #FFEDEB; border-radius: 30px;}
  .connect-box                                   {padding: 30px; text-decoration: none; width: 100%; display: inline-flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; border-radius: 15px; background-color: var(--white-color); aspect-ratio: 1/1;}
  .connect-box img                               {padding-bottom: 18px; max-width: 110px;}
  .connect-box p                                 {padding: 0px; font-weight: bold; }
 
  /* chat Bot screens start  */
- .chat-bot .toggle-chatbot                      { max-height: calc(100vh - 30px); min-height: calc(100vh - 30px); display: block; border-radius: 15px 15px 0px 0px; width: 100%; position: absolute; left: 0; bottom: 0;}
- .chat-bot .chatbot-box                         {position: relative; max-height: calc(100vh - 30px); min-height: 100vh; top: unset; right: unset; bottom: 0; min-width: 100%;}
- .chat-bot .chat-scroll                         {height: 100%; max-height: 100%;}
+ .chat-bot .toggle-chatbot                      {height: calc(100% - 30px); display: block; border-radius: 15px 15px 0px 0px; width: 100%; position: absolute; left: 0; bottom: 0;}
+ .chat-bot .chatbot-box                         {position: relative; min-height: 100vh; height: 100vh; top: unset; right: unset; bottom: 0; min-width: 100%;}
+ .chat-bot .chat-scroll                         {height: 100%; overflow-x: hidden;}
  .chat-bot .chatbot-header                      {background-color: var(--red-color-2); justify-content: flex-start; gap: 25px;}
  .chat-bot .chatbot-header p                    {padding: 0px; line-height: 22px; font-size: 18px; font-weight: bold; color: var(--white-color);}
  .chat-bot .chatbot-header span                 {font-size: 14px;  line-height: 20px; letter-spacing: 0.1px; color: var(--white-color); }
  .chat-bot .chatbot-header span a               {color: var(--white-color) ; font-weight: bold; text-decoration: none;}
+ .chat-bot .chatbot-body                        {height: calc(100% - 180px);}
+ .chat-bot .chat-box ul li span                 {max-width: 60%;}
+ .chat-bot span i                               {margin-right: 8px;}
+ .chat-bot .chat-box                            {padding: 0px 24px; flex-direction: column; }
+ .chat-slider                                   {padding: 0px 16px; margin-top: 20px; width: 100%;  
+     }
+ .flight-price                                  {color: black; font-weight: 500; margin-bottom: 12px;}
+ .slider-header                                 {background-color: #FFEDEB; padding: 12px; }
+ .chat-slide p                                  {display: flex; justify-content: space-between; align-items: center; padding: 0px;}
+ .slider-clipart                                 {margin-bottom: -38px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05); background-color: white; padding: 12px 15px; border-radius: 5px;}
+ .chat-slide                                    {background-color: white; margin: 0 5px; border-radius: 15px; overflow: hidden;}
+ .bold-text                                     {color: black; font-weight: 500; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
+ .chat-slider-body                              {padding: 12px; margin-top: 38px;}
+ .chat-slider-body p                            {padding-bottom: 6px; display: flex; justify-content: space-between;}
+ .chat-slider-body .bg-btn                      {width: 100%; margin-top: 12px;}
+ .chat-slider-body .bg-btn a                    {width: 100%; text-align: center; transition: all 0.2s;}
+ .chat-slider-arrow        li                   {width: 40px; height:  40px; cursor: pointer; background-color: #F5F5F5; display: flex; align-items: center; justify-content: center; border-radius: 50%;}
+ .chat-slider-arrow .right                      {position: absolute; top: 50%; right: -40px; transform: translate(0%, -50%);}
+    .chat-slider-arrow .left                    {position: absolute; top: 50%;  left: -40px; transform: translate(0%, -50%);}
+ /* .chat-slider-arrow        li.slick-disabled    {display: none;} */
+ .chat-slider-arrow .right.slick-disabled       {opacity: 0;}
+ .chat-slider-arrow .left.slick-disabled       {opacity: 0;}
+ .chatbot-seven .slider-header                  {aspect-ratio: 1/0.8; background-image: url('../images/hotel-img.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
+ .chatbot-seven .chat-slider-body               {margin-top: 12px;}
 
- /* nn chatbot  */
- .n-chatbot                                     {min-height: 100vh; max-height: 100vh;}
- .n-chat-box                                    {min-height: 100%;}
- 
  /* responsive start  */
  @media only screen and (min-width: 1400px) and (max-width: 1599px)
 {
@@ -481,7 +515,7 @@ ul                                              {padding: 0px; margin: 0px; list
 
   /* connect page  */
   .connect-with-sm                                {padding: 50px;}
-  .connect-content                                {padding: 90px 0px 28px 0px;}
+  .connect-content                                {padding: 170px 0px 28px 0px;}
   .connect-box                                    {padding: 26px;}
   .connect-box img                                {max-width: 100px;}
 }
@@ -569,7 +603,7 @@ ul                                              {padding: 0px; margin: 0px; list
   /* connect page  */
   .connect                                        {padding-bottom: 50px; min-height: auto;}
   .connect-with-sm                                {padding: 40px;}
-  .connect-content                                {padding: 80px 0px 28px 0px;}
+  .connect-content                                {padding: 150px 0px 28px 0px;}
   .connect-box                                    {padding: 12px;}
   .connect-box img                                {max-width: 80px;}
   .connect-box img                                {padding-bottom: 12px;}
@@ -667,7 +701,7 @@ ul                                              {padding: 0px; margin: 0px; list
  /* connect page  */
  .connect                                        {padding-bottom: 50px; min-height: auto;}
  .connect-with-sm                                {padding: 40px;}
- .connect-content                                {padding: 80px 0px 28px 0px;}
+ .connect-content                                {padding: 150px 0px 28px 0px;}
  .connect-box                                    {padding: 12px;}
  .connect-box img                                {max-width: 60px;}
  .connect-box img                                {padding-bottom: 12px;}
@@ -796,7 +830,7 @@ ul                                              {padding: 0px; margin: 0px; list
  /* connect page  */
  .connect                                        {padding-bottom: 50px; min-height: auto;}
  .connect-with-sm                                {padding: 40px;}
- .connect-content                                {padding: 80px 0px 28px 0px;}
+ .connect-content                                {padding: 150px 0px 28px 0px;}
  .connect-box                                    {padding: 12px;}
  .connect-box img                                {max-width: 60px;}
  .connect-box img                                {padding-bottom: 12px;}
@@ -819,6 +853,9 @@ ul                                              {padding: 0px; margin: 0px; list
   .chatbot-box                                    {right: 10px; bottom: 20px;}
   .chat-scroll                                    {height: 280px;}
  .select-msg-slider ul                            {overflow-x: unset; padding-bottom: 10px;}
+ .chat-bot .chatbot-body                          {height: calc(100% - 200px);}
+ .chat-box ul li span                             { font-size: 14px;     padding: 7px 14px;}
+ .chat-bot .chatbot-header                        {gap: 8px; line-height: 18px;}
  .select-msg-slider ul::-webkit-scrollbar {
     width: 0px;
     height: 0px
@@ -941,7 +978,7 @@ ul                                              {padding: 0px; margin: 0px; list
  /* connect page  */
  .connect                                        {padding-bottom: 50px; min-height: auto;}
  .connect-with-sm                                {padding: 20px 10px;}
- .connect-content                                {padding: 50px 0px 28px 0px;}
+ .connect-content                                {padding: 120px 0px 28px 0px;}
  .connect-box                                    {padding: 12px;}
  .connect-box img                                {max-width: 40px;}
  .connect-box img                                {padding-bottom: 12px;}
@@ -953,4 +990,6 @@ ul                                              {padding: 0px; margin: 0px; list
     .screenshot-bg-circle{height: 96%;}  
 }
 
+.date-picker-msg{width: 100%; display: flex !important; justify-content: center !important;}
 
+ 

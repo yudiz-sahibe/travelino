@@ -12,6 +12,37 @@ $(document).ready(function() {
 
     });
 
+  $('.chat-slider-item').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '.right',
+    prevArrow: '.left',
+    responsive: [
+      
+      {
+        breakpoint:1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+     
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+
     // scroll header 
 
     $(window).scroll(function () {
@@ -63,3 +94,18 @@ slider.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 3; //scroll-fast
   slider.scrollLeft = scrollLeft - walk;
 });
+
+
+
+
+document.addEventListener("mousemove", parallax);
+function parallax(e){
+  document.querySelectorAll(".object").forEach(function(move){
+
+    var moving_value = move.getAttribute("data-value");
+    var x = (e.clientX * moving_value) / 90;
+    var y = (e.clientY * moving_value) / 90;
+
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
+}
