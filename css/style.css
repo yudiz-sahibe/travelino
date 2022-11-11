@@ -185,10 +185,11 @@ body                           {font-family: 'Atyp Display';}
 .primary-btn.red-btn                                    {background-color: var(--red-color-3); border-color: var(--red-color-3); color: var(--white-color);}
 .primary-btn:hover:before                               {opacity: 0; color: var(--burgundy-color);} 
 .text-circle                                            {position: relative;}
+/* .text-circle::after                                  {content: ''; width: 100%; height: 100%; position: absolute; border: 2px solid white; } */
 .text-circle .text-circle-div                           {position: absolute;  width: 100%; height: 90%; top: 0; left: 2px; border-radius: 50%; outline: 2px solid var(--white-color); transform: rotate(345deg); z-index: -1;}
 .text-circle .text-circle-div.big-circle                {transform: rotate(350deg) !important;}
 
-
+ 
 
 /* common css  */
 section                                         {padding: 100px 0px;}
@@ -217,6 +218,7 @@ ul                                              {padding: 0px; margin: 0px; list
 .mouse-animation.center-cicle                   {transform: rotate();}
 .mouse-animation.center-cicle::after            {border: 2px solid red; transform: unset; height: 100%; left: -10%;} 
 .copy-url                                       {padding: 10px 16px; margin-top: 20px; border: 1px solid #a3a3a37c; border-radius: 10px; background-color: #a3a3a310;}
+
 
 /* Popup css start  */
  .signup-modals .modal-dialog                  {max-width: 1140px;}
@@ -472,6 +474,9 @@ ul                                              {padding: 0px; margin: 0px; list
  .chat-slider-arrow .left.slick-disabled       {opacity: 0;}
  .chatbot-seven .slider-header                  {aspect-ratio: 1/0.8; background-image: url('../images/hotel-img.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
  .chatbot-seven .chat-slider-body               {margin-top: 12px;}
+
+ /* content pages  */
+ .content-page                                  {min-height: calc(100vh - 106px); display: flex; align-items: center;}
 
  /* responsive start  */
  @media only screen and (min-width: 1400px) and (max-width: 1599px)
