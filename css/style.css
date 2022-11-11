@@ -216,6 +216,7 @@ ul                                              {padding: 0px; margin: 0px; list
 .bg-header-color                                {background-color: var(--red-color-2); position: relative;}
 .mouse-animation.center-cicle                   {transform: rotate();}
 .mouse-animation.center-cicle::after            {border: 2px solid red; transform: unset; height: 100%; left: -10%;} 
+.copy-url                                       {padding: 10px 16px; margin-top: 20px; border: 1px solid #a3a3a37c; border-radius: 10px; background-color: #a3a3a310;}
 
 /* Popup css start  */
  .signup-modals .modal-dialog                  {max-width: 1140px;}
@@ -244,7 +245,7 @@ ul                                              {padding: 0px; margin: 0px; list
 
 
  /* header  */
- header                                         {transition: all 0.4s; background-color: var(--red-color-2); padding: 14px 0px; width: 100%; position: fixed; z-index: 99;}
+ header                                         { border-bottom: 2px solid var(--red-color-2); background-color: var(--red-color-2); padding: 14px 0px; width: 100%; position: fixed; z-index: 99;}
  header .navbar                                 {padding: 0px;}
  header .navbar-light .navbar-nav .nav-link     {padding: 0px 0px 6px; overflow: hidden; transition: all 0.3s;  font-size: 18px; position: relative; line-height: 22px; font-weight: 500; letter-spacing: 0.5px;   color: var(--gray-color);}
  header .navbar-light .navbar-nav .nav-item:not(:first-child){margin-left: 65px;}
@@ -253,6 +254,7 @@ ul                                              {padding: 0px; margin: 0px; list
  header  .navbar-nav .nav-item .nav-link:hover::after{left: 0;}
  header  .navbar-nav .nav-item .nav-link.active::after{left: 0;}
  header  .navbar-nav .nav-item .nav-link.active{color: white;}
+ header .navbar-light .navbar-toggler-icon      { filter:  brightness(0) invert(1);}
 
  .navbar-nav .nav-item .nav-link:hover          {color: white;}
  header .navbar-brand img                       {max-width: 128px;}
@@ -320,18 +322,21 @@ ul                                              {padding: 0px; margin: 0px; list
  .home-banner                                   {font-weight: bold;}
  .banner-right img                              {max-width: 100%; width: 100%; max-height: 100%; object-fit: contain;}
  .banner-left                                   {max-width: 520px;}
- .banner-right                                  {width: 100%; position: relative; display: inline-flex; align-items: self-end;}
+ .home-banner .text-circle                      {white-space: nowrap;}
+ .banner-right                                  {width: 100%; position: relative; display: inline-flex; align-items: flex-end;}
  .home-banner .slick-dots                       {bottom: 60px; width: auto;}
  .home-banner .slick-dotted.slick-slider        {margin: 0px;}
  .home-banner h1                                {padding-bottom: 34px; text-transform: uppercase;}
  .home-banner h4                                {padding-bottom: 34px; max-width: 364px; font-weight: 400;}
  .home-banner .slick-list, .slick-track         {height: 100%;}
- .home-banner .slick-dots li                    {width: 12px; height: 12px; outline: 2px solid white; border-radius: 50%;}
- .home-banner .slick-dots li button:before      {padding: 0px; width: 12px; content: ''; height: 12px; background-color: var(--white-color);}
+ .home-banner .slick-dots li                    {width: 12px; height: 12px; outline: none; border-radius: none;}
+ .home-banner .slick-dots li button:before      {content: none;}
  .home-banner .slick-dots li.slick-active button:before{opacity: 1;}
  .home-banner .slick-dots li button:before      {opacity: 0;}
+ .home-banner .slick-dots li button             {width: 100%; height: 100%; background-color: transparent; border: 2px solid white; border-radius: 50%;}
  .home-banner .slick-dots li:not(:last-child)   {margin-right: 15px;}
  .home-banner .slick-slide                      {height: auto;}
+ .home-banner .slick-dots li.slick-active button{background-color: white;}
  .home-banner .slick-track                      {display: flex;}
  .mouseover-object                              {max-width: 50%; position: absolute; top: 6%; right: 0;}
  .mouseover-object                      img     {width: 100%; transition: all 0.2s;}
@@ -362,7 +367,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .choose-app .timeline-dot                      {top: -42px; left: unset;}
  .timeline-screen                               {display: flex;}
  .game-screen                                   {display: flex; align-items: center;}
- .left-screen                                   {width: 100%; display: flex; justify-content: end;}
+ .left-screen                                   {width: 100%; display: flex; justify-content: flex-end;}
 
  /* choose us  */
  .choose-timeline                               {padding: 0px 50px;}
@@ -386,6 +391,7 @@ ul                                              {padding: 0px; margin: 0px; list
  /* how is work  */
  .how-is-work                                   {background-color: var(--red-color-2); border-radius: 0px 200px 0px 0px;}
  .how-is-content                                {max-width: 720px; margin: 0 auto; text-align: center; }
+ .how-is-work .mouse-animation.center-cicle::after{border-color: var(--gray-color-2);}
  .how-img                                       {padding-top: 74px; display: flex; justify-content: center;}
  .burgundy                                      {background-color: var(--burgundy-lite)}
  .poin-one, .poin-two                           {padding: 14px 34px; max-width: 334px; background-color: var(--white-color);}
@@ -399,7 +405,17 @@ ul                                              {padding: 0px; margin: 0px; list
  .how-is-right  .poin-two                       {border-radius: 0px 35px 35px 35px;}
  .how-is-left                                   {position: relative ; z-index: 3;}
  .how-is-right                                  {position: relative; align-self: flex-end; z-index: 2;}
+ .hover-point                                   {transition: all 0.3s ease;}
  .how-is-content .cicrle-text-bg::after         {transform: rotate(-7.93deg); border: 3px solid #FFB3B0;}
+ .how-is-screen:hover ~ .how-is-left .hover-point  {background-color: var(--red-color);}
+ .how-is-screen:hover ~ .how-is-left .hover-point h4{color: white;}
+ .how-is-screen:hover ~ .how-is-left .hover-point p{color: white;}
+ .how-is-screen:hover ~ .how-is-right .hover-point h4{color: white;}
+ .how-is-screen:hover ~ .how-is-right .hover-point p{color: white;}
+ .how-is-screen:hover ~ .how-is-right .hover-point  {background-color: var(--red-color);}
+
+
+
 
  /* footer  */
  .footer-content                                {padding: 60px 0px; border-bottom: 1px solid #CECECE; display: flex; align-items: center; justify-content: space-between;}
@@ -856,6 +872,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .chat-bot .chatbot-body                          {height: calc(100% - 200px);}
  .chat-box ul li span                             { font-size: 14px;     padding: 7px 14px;}
  .chat-bot .chatbot-header                        {gap: 8px; line-height: 18px;}
+ .mouse-animation.center-cicle::after             {left: 0%;}
  .select-msg-slider ul::-webkit-scrollbar {
     width: 0px;
     height: 0px
@@ -869,7 +886,7 @@ ul                                              {padding: 0px; margin: 0px; list
  section                                        {padding: 40px 0px;}
  .section-title                                 {padding-bottom: 40px;}
  .mobile-frame                                  {max-width: 190px;}
- .screenshot-bg-circle                          {height: 100%;}
+ .screenshot-bg-circle                          {height: 100%; left: -12px;}
  .content-wrap                                  {padding: 0px 30px;}
  .primary-btn                                   {padding: 8px 20px ; line-height: 20px; font-size: 17px;}
  .how-img .screen-shot.burgundy                 {box-shadow: -12px -12px 0px var(--burgundy-lite);}
@@ -885,7 +902,7 @@ ul                                              {padding: 0px; margin: 0px; list
   /* Popup css start  */
 .signup-content                                  {padding: 40px 0px; max-width: 100%;}
 .signup-modals .modal-dialog                     {max-width: 100%;}
-.signup-modals .btn-close                        {width: 30px; height: 30px;}
+.signup-modals .btn-close                        {width: 30px; height: 30px; top: -6px; right: -6px;}
 .game-popup .signup-content                      {padding: 40px 0px;}
 .form-group .form-control                        {padding: 10px 20px;}
 .signup-modals .form-check-label                 {font-size: 14px;}
