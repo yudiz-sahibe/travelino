@@ -185,11 +185,10 @@ body                           {font-family: 'Atyp Display';}
 .primary-btn.red-btn                                    {background-color: var(--red-color-3); border-color: var(--red-color-3); color: var(--white-color);}
 .primary-btn:hover:before                               {opacity: 0; color: var(--burgundy-color);} 
 .text-circle                                            {position: relative;}
-/* .text-circle::after                                  {content: ''; width: 100%; height: 100%; position: absolute; border: 2px solid white; } */
 .text-circle .text-circle-div                           {position: absolute;  width: 100%; height: 90%; top: 0; left: 2px; border-radius: 50%; outline: 2px solid var(--white-color); transform: rotate(345deg); z-index: -1;}
 .text-circle .text-circle-div.big-circle                {transform: rotate(350deg) !important;}
 
- 
+
 
 /* common css  */
 section                                         {padding: 100px 0px;}
@@ -205,7 +204,7 @@ section                                         {padding: 100px 0px;}
 .black-text                                     {color: black;}
 .cicrle-text-bg::after                          {position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; content: ''; border-radius: 50%; z-index: -1; width: 100%; height: 90%; border: 3px solid var(--red-color);}
 .form-group .form-control                       {padding: 14px 24px; border-radius: 10px; border: 1px solid #B0B0B0; font-size: 16px; line-height: 28px;}
-.form-group                                     {margin-bottom: 24px;}
+.form-group                                     {margin-bottom: 20px;}
 .form-group .form-control:focus                 {color: #212529; background-color: #fff; border-color: var(--circle-color); outline: 0; box-shadow: 0 0 0 .16rem #e7bdbaad;}
 .signup-modals .form-check-label                {margin-top: 3px; font-size: 18px; line-height: 22px; letter-spacing: 0.5px; color: var(--gray-color); font-weight: bold;}    
 .signup-modals .form-check .form-check-input    {width: 18px; height: 18px;}
@@ -219,10 +218,9 @@ ul                                              {padding: 0px; margin: 0px; list
 .mouse-animation.center-cicle::after            {border: 2px solid red; transform: unset; height: 100%; left: -10%;} 
 .copy-url                                       {padding: 10px 16px; margin-top: 20px; border: 1px solid #a3a3a37c; border-radius: 10px; background-color: #a3a3a310;}
 
-
 /* Popup css start  */
  .signup-modals .modal-dialog                  {max-width: 1140px;}
- .signup-content                               {max-width: 90%; margin: 0 auto; padding: 142px 0px; position: relative; overflow: hidden;}
+ .signup-content                               {max-width: 90%; margin: 0 auto; padding: 40px 0px; position: relative; overflow: hidden;}
  .signup-modals .btn-close                     {width: 50px; border-radius: 50%; height: 50px; background:  transparent url( '../images/popup-close-ic.svg' ) center/1em auto no-repeat; position: absolute; top: -10px; right: -10px; z-index: 1; background-color: var(--burgundy-color); opacity: 1;}
  .signup-modals .btn-close:focus               {box-shadow: none;}
  .signup-modals .modal-content                 {border-radius: 30px;}
@@ -232,7 +230,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .play-game button                             {padding: 0px; margin-bottom: 8px; width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50% ; border: 3px solid var(--white-color); background-color: transparent;}
  .play-game                                    {position: absolute; max-height: 498px; flex-direction: column;     justify-content: center; display: inline-flex;    align-items: center; z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%);}
  .play-game button img                         {margin-left: 3px;}
- .game-popup .signup-content                   {padding: 60px 0px;}
+ .game-popup .signup-content                   {padding: 40px 0px;}
  .game span                                    {font-size: 18px; line-height: 22px; letter-spacing: 0.5px; font-weight: bold; color: var(--white-color);}
  .signup-content h2                            {padding-bottom: 18px;}  
  .signup-content p                             {padding-bottom: 30px;} /*oops*/
@@ -301,7 +299,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .msg-input .input-group>.form-control:focus, .input-group>.form-select:focus{box-shadow: none; outline: none;}
  .msg-input .input-group-text                   {border: none; background-color: transparent;}
  .msg-input input::-webkit-input-placeholder {/* Chrome/Opera/Safari/Edge */
-	/*styles here*/
+    /*styles here*/
     font-style: italic;
     color: #A7A7A7;
 }
@@ -313,7 +311,7 @@ ul                                              {padding: 0px; margin: 0px; list
 }
 
 .msg-input input:-ms-input-placeholder {/* IE 10+ */
-	/*styles here*/
+    /*styles here*/
     font-style: italic;
     color: #A7A7A7;
 }
@@ -475,13 +473,10 @@ ul                                              {padding: 0px; margin: 0px; list
  .chatbot-seven .slider-header                  {aspect-ratio: 1/0.8; background-image: url('../images/hotel-img.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
  .chatbot-seven .chat-slider-body               {margin-top: 12px;}
 
- /* content pages  */
- .content-page                                  {min-height: calc(100vh - 106px); display: flex; align-items: center;}
-
  /* responsive start  */
  @media only screen and (min-width: 1400px) and (max-width: 1599px)
 {
-
+    .content-page                                  { padding-top: 120px;}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px)
 {
@@ -505,7 +500,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .chatbot-box                                    {right: 30px; bottom: 60px;}
 
  /* Popup css start  */
- .signup-content                                  {padding: 100px 0px;}
+ .signup-content                                  {padding: 40px 0px;}
  
  
  /* home banner  */
@@ -539,6 +534,7 @@ ul                                              {padding: 0px; margin: 0px; list
   .connect-content                                {padding: 170px 0px 28px 0px;}
   .connect-box                                    {padding: 26px;}
   .connect-box img                                {max-width: 100px;}
+  .content-page                                  { padding-top: 120px;}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px)
@@ -570,10 +566,10 @@ ul                                              {padding: 0px; margin: 0px; list
  
 
  /* Popup css start  */
- .signup-content                                  {padding: 90px 0px;}
+ .signup-content                                  {padding: 40px 0px;}
  .signup-modals .modal-dialog                     {max-width: 920px;}
  .signup-modals .btn-close                        {width: 44px; height: 44px;}
- .game-popup .signup-content                       {padding: 50px 0px;}
+ .game-popup .signup-content                       {padding: 40px 0px;}
  .signup-content h2                               {padding-bottom: 16px;}
  .signup-content p                               {padding-bottom: 28px;}
  .oops-img                                     {padding-bottom: 20px; max-width: 268px;}
@@ -628,6 +624,7 @@ ul                                              {padding: 0px; margin: 0px; list
   .connect-box                                    {padding: 12px;}
   .connect-box img                                {max-width: 80px;}
   .connect-box img                                {padding-bottom: 12px;}
+  .content-page                                  { padding-top: 120px;}
 
 }
 
@@ -661,10 +658,10 @@ ul                                              {padding: 0px; margin: 0px; list
  .chat-bot-btn img                                {max-width: 35px;}
 
  /* Popup css start  */
- .signup-content                                  {padding: 70px 0px;}
+ .signup-content                                  {padding: 40px 0px;}
  .signup-modals .modal-dialog                     {max-width: 690px;}
  .signup-modals .btn-close                        {width: 38px; height: 38px;}
- .game-popup .signup-content                      {padding: 50px 0px;}
+ .game-popup .signup-content                      {padding: 40px 0px;}
  .form-group .form-control                        {padding: 12px 22px;}
  .signup-modals .form-check-label                 {font-size: 14px;}
  .signup-content h2                               {padding-bottom: 12px;}
@@ -726,6 +723,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .connect-box                                    {padding: 12px;}
  .connect-box img                                {max-width: 60px;}
  .connect-box img                                {padding-bottom: 12px;}
+ .content-page                                  { padding-top: 120px;}
 
 }
 
@@ -761,10 +759,10 @@ ul                                              {padding: 0px; margin: 0px; list
  .chat-bot-btn img                                {max-width: 30px;}
 
  /* Popup css start  */
-.signup-content                                  {padding: 70px 0px;}
+.signup-content                                  {padding: 40px 0px;}
 .signup-modals .modal-dialog                     {max-width: 500px;}
 .signup-modals .btn-close                        {width: 38px; height: 38px;}
-.game-popup .signup-content                      {padding: 50px 0px;}
+.game-popup .signup-content                      {padding: 40px 0px;}
 .form-group .form-control                        {padding: 10px 20px;}
 .signup-modals .form-check-label                 {font-size: 14px;}
 .signup-modals .about-screen                     {display: flex; justify-content: start; padding-bottom: 0px;}
@@ -855,6 +853,7 @@ ul                                              {padding: 0px; margin: 0px; list
  .connect-box                                    {padding: 12px;}
  .connect-box img                                {max-width: 60px;}
  .connect-box img                                {padding-bottom: 12px;}
+ .content-page                                  { padding-top: 120px;}
 
 }
 
@@ -1005,13 +1004,29 @@ ul                                              {padding: 0px; margin: 0px; list
  .connect-box img                                {max-width: 40px;}
  .connect-box img                                {padding-bottom: 12px;}
  .connect-box p                                  {font-size: 14px; line-height: 16px;}
+ .content-page                                  { padding-top: 120px;}
 }
 
 @media only screen  and (max-width: 355px)
 {
     .screenshot-bg-circle{height: 96%;}  
+    .content-page                                  { padding-top: 120px;}
 }
 
 .date-picker-msg{width: 100%; display: flex !important; justify-content: center !important;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+ .content-page                                  {min-height: calc(100vh - 106px); display: flex; padding-top: 160px;}
+
+
 
  
